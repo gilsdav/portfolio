@@ -4,7 +4,7 @@
     <a [routerLink]="'/home'" class="logo">{{title}}</a> 
   </nb-layout-header>
 
-  <nb-sidebar [fixed]="isMobile">
+  <nb-sidebar [responsive]="true"> <!-- [fixed]="isMobile" -->
     <nb-menu [items]="items"></nb-menu>
   </nb-sidebar>
 

@@ -7,6 +7,7 @@ import { NbLayoutModule, NbSidebarModule, NbSidebarService, NbMenuModule, NbButt
 import { CoreComponent } from './core.component';
 import { HomeComponent } from './home/home.component';
 import { NbMenuInternalService, NbMenuService } from '@nebular/theme/components/menu/menu.service';
+import { ProfileCardComponent } from './home/components/profile-card/profile-card.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,11 @@ import { NbMenuInternalService, NbMenuService } from '@nebular/theme/components/
     NbMenuModule,
     NbButtonModule
   ],
-  declarations: [CoreComponent, HomeComponent],
+  declarations: [
+    CoreComponent,
+    HomeComponent,
+    ProfileCardComponent
+  ],
   providers: [NbSidebarService, NbMenuInternalService, NbMenuService],
   exports: [CoreComponent, HomeComponent]
 })

@@ -24,10 +24,20 @@
 $nb-themes: nb-register-theme((
 
    color-bg: #222222,
+   color-bg-active: #226D70,
    shadow: 0 1px 2px 0 #000000,
+   layout-bg: rgb(22, 73, 75),
+   color-fg: rgb(217, 231, 233),
+   spinner-bg: rgb(22, 73, 75),
+   scrollbar-fg: #226D70,
+   scrollbar-bg: rgb(22, 73, 75),
+   separator: rgb(22, 73, 75),
+   color-fg-highlight: #9FADD0,
+   link-color: #9FADD0,
+  link-color-hover: rgb(181, 192, 221),
 //   color-fg: #303030,
 //   layout-bg: #ededed,
-), default, cosmic);
+), default, cosmic, );
 
 // .list-group-item {
 //     background-color: #222222;

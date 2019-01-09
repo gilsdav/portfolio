@@ -18,51 +18,71 @@ export class CoreComponent implements OnInit {
 
   public items: NbMenuItem[] = [
     {
-      title: 'Home',
+      // title: 'About me',
+      title: 'Qui suis-je ?',
       link: '/home',
-      icon: 'nb-home',
+      icon: 'nb-person',
       home: true
     },
+    // {
+    //   title: 'Portfolio',
+    //   icon: 'nb-gear',
+    //   children: [
+    //     {
+    //       title: 'Github',
+    //       url: 'https://github.com/gilsdav',
+    //     },
+    //     {
+    //       title: 'Privacy Policy',
+    //       url: '#',
+    //     },
+    //     {
+    //       title: 'Logout',
+    //       link: '',
+    //     },
+    //   ],
+    // },
     {
-      title: 'Portfolio',
-      icon: 'nb-gear',
+      title: 'Mes comptes',
+      icon: 'nb-email',
       children: [
         {
           title: 'Github',
           url: 'https://github.com/gilsdav',
         },
         {
-          title: 'Privacy Policy',
-          url: '#',
-        },
-        {
-          title: 'Logout',
-          link: '',
-        },
-      ],
-    },
-    {
-      title: 'Articles',
-      icon: 'nb-list',
-      children: [
-        {
-          title: 'Languages',
-          link: '/blog/languages',
-        },
-        {
-          title: 'Web Frameworks',
-          link: '/blog/frameworks',
-        },
-        {
-          title: 'Mobile',
-          link: '/blog/mobile',
-        },
-        {
-          title: 'Technologies',
-          link: '/blog/technologies',
+          title: 'LinkedIn',
+          url: 'https://www.linkedin.com/in/david-gilson-innovate/',
         },
       ]
     },
+    {
+      title: 'Formations',
+      icon: 'nb-gear',
+      link: '/formations'
+    },
+    // {
+    //   title: 'Articles (FR)',
+    //   icon: 'nb-list',
+    //   children: [
+    //     {
+    //       title: 'Languages',
+    //       link: '/blog/languages',
+    //     },
+    //     {
+    //       title: 'Web Frameworks',
+    //       link: '/blog/frameworks',
+    //     },
+    //     {
+    //       title: 'Mobile',
+    //       link: '/blog/mobile',
+    //     },
+    //     {
+    //       title: 'Technologies',
+    //       link: '/blog/technologies',
+    //     },
+    //   ]
+    // },
   ];
 
   constructor(private router: Router, private sidebarService: NbSidebarService) { }

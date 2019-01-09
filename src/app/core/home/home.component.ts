@@ -25,13 +25,18 @@ export class HomeComponent implements OnInit, AfterViewInit {
       showCursor: true,
       strings: [
         `Bonjour, je m'appel David Gilson.`,
-        `Je suis un dévelopeur Web et Mobile mais mon post actuel est "Technical Lead Architect Front-End".`,
-        `Merci pour votre visite sur mon site !`,
-        `Je vais essayer d'y mettre mes références.`,
+        `Bienvenue et merci de votre visite sur mon site web personnel.`,
+        `Je suis actuellement développeur Web et Mobile et spécialisé dans le Front-End ainsi que les technologies Microsoft.`,
+        `Bonne visite`,
+        // `Hello, I'm David Gilson.`,
+        // `Welcome and thanks to visit my personal website.`,
+        // `I'm curently a Web and Mobile developer specialized in Front-End and Microsoft technologies.`,
+        // `Enjoy`
       ],
       loop: false,
       backDelay:  1500,
-      backSpeed:  30,
+      backSpeed:  0,
+      typeSpeed: 50
       // onFinished: () => this.initTwo()
     });
   }
