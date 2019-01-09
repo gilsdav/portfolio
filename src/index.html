@@ -2,13 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>GilsdavPortfolio</title>
+  <title>Gilsdav</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+    <style>
+
+      .loader span {
+        display: inline-block;
+        -webkit-animation: pulse 0.4s alternate infinite ease-in-out;
+                animation: pulse 0.4s alternate infinite ease-in-out;
+      }
+      .loader span:nth-child(odd) {
+        -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s;
+      }
+      @-webkit-keyframes pulse {
+        to {
+          -webkit-transform: scale(0.9);
+                  transform: scale(0.9);
+          opacity: 0.7;
+        }
+      }
+      @keyframes pulse {
+        to {
+          -webkit-transform: scale(0.9);
+                  transform: scale(0.9);
+          opacity: 0.7;
+        }
+      }
+
+      body {
+        background-color: black;
+      }
+
+      .parent-loader {
+        display: flex;
+        height: 100vh;
+      } 
+
+      .loader {
+        font-family: sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 3.5rem;
+        animation: glitch 2s steps(100) infinite;
+        text-align: center;
+        margin: auto;
+      }
+
+      /* GLITCH EFFECT */
+      @keyframes glitch {
+        0% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+        4% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+        5% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+        10% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+        11% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+        15% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+        16% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+        20% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+        21% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+        30% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+        31% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+        40% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+        41% {text-shadow: 50px 0 0 blue, -50px 0 0 lime;}
+        42% {text-shadow: 0 0 0 blue, 0 0 0 lime;}
+        43% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+        46% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+        47% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+        50% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+        51% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+        55% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+        56% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+        60% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+        61% {text-shadow: 30px 0 0 red, -30px 0 0 lime;}
+        62% {text-shadow: 0 0 0 red, 0 0 0 lime;}
+        63% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;}
+        66% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;}
+        67% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+        70% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+        71% {text-shadow: 70px 0 0 red, -70px 0 0 blue;}
+        72% {text-shadow: 0 0 0 red, 0 0 0 blue;}
+        73% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+        76% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+        77% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+        80% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+        81% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+        85% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+        86% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+        90% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+        91% {text-shadow: 60px 0 0 lime, -60px 0 0 blue;}
+        92% {text-shadow: 0 0 0 lime, 0 0 0 blue;}
+        92% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+        95% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+        96% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+        99% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+        100% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+      }
+    </style>
+    <div class="parent-loader">
+      <div class="loader">
+        <span>{{</span>Gilsdav<span>}}</span>
+      </div>
+    </div>
+  </app-root>
 </body>
 </html>

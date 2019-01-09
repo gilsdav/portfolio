@@ -1,0 +1,34 @@
+// // import Nebular Theme System and the default theme
+// @import '~@nebular/theme/styles/theming';
+// @import '~@nebular/theme/styles/themes/default';
+
+// // and change the variables you need, 
+// // or simply leave the map empty to use the default values
+// // let's make it blue-ish instead of the default white color
+// $nb-themes: nb-register-theme((
+//     /* color-bg: #222222,
+//     shadow: 0 1px 2px 0 #000000,
+//     color-fg: #303030,
+//     layout-bg: #ededed,
+//     color-fg-heading: white, */
+//     color-fg-heading: #4684ee,
+//     link-color: #78a3ee,
+//     link-color-hover: #7097da,
+//     link-color-visited: link-color,
+// ), default, default);
+
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes/cosmic';
+
+// dark theme
+$nb-themes: nb-register-theme((
+
+   color-bg: #222222,
+   shadow: 0 1px 2px 0 #000000,
+//   color-fg: #303030,
+//   layout-bg: #ededed,
+), default, cosmic);
+
+// .list-group-item {
+//     background-color: #222222;
+// }
