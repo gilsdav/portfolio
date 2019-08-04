@@ -27,6 +27,6 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
-  npm install -g angular-cli-ghpages
-  ngh
+    npm install -g angular-cli-ghpages
+    ngh
   displayName: 'publish to github pages'
