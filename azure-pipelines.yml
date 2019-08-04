@@ -23,10 +23,9 @@ steps:
 
 - script: |
     npm install
-    npm run build
+    npm run build --base-href "https://gilsdav.github.io/portfolio/"
   displayName: 'npm install and build'
 
 - script: |
-    npm install -g angular-cli-ghpages
-    ngh --dir=dist/gilsdav-portfolio
+    npm run publish
   displayName: 'publish to github pages'
