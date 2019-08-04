@@ -26,6 +26,11 @@ steps:
     npm run build -- --base-href="https://gilsdav.github.io/portfolio/"
   displayName: 'npm install and build'
 
-- script: |
-    npm run publish
-  displayName: 'publish to github pages'
+# - script: |
+#    npm install -g angular-cli-ghpages
+#    ngh --dir=dist/gilsdav-portfolio
+#  displayName: 'publish to github pages'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/dist/gilsdav-portfolio'
