@@ -83,6 +83,11 @@ export class CoreComponent implements OnInit {
     //     },
     //   ]
     // },
+    {
+      title: 'Wetry.tech',
+      icon: 'nb-cloudy',
+      url: 'https://wetry.tech',
+    }
   ];
 
   constructor(private router: Router, private sidebarService: NbSidebarService) { }
