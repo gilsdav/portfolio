@@ -23,7 +23,7 @@ steps:
 
 - script: |
     npm install
-    npm run build -- --base-href="https://gilsdav.github.io/portfolio/"
+    npm run build -- --base-href="https://wetry.eu/"
   displayName: 'npm install and build'
 
 # - script: |
