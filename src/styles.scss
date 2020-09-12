@@ -1,16 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
-
-@import 'bootstrap-custom';
-// @import "../node_modules/@nebular/theme/styles/all";
-// @import url("../node_modules/@nebular/theme/styles/prebuilt/default.css");
-
 @import 'themes';
+
 @import '~@nebular/theme/styles/globals';
 
-// install the framework
 @include nb-install() {
   @include nb-theme-global();
 };
+/* You can add global styles to this file, and also import other style files */
 
-@import url('~nebular-icons/css/nebular-icons.css');
-@import url('~@icon/devicons/devicons.css');
+@import url('~devicon/devicon.css');
+@import url('~devicon/devicon-colors.css');
+
+body {
+  background-color: nb-theme(background-basic-color-1);
+}
+
+*:focus {
+  outline: none;
+}

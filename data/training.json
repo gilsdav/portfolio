@@ -1,0 +1,90 @@
+{
+    "training": [
+        {
+            "title": "Angular",
+            "icon": "angularjs-plain",
+            "items": [
+                {
+                    "link": "assets/formations/angular/Angular - Les fondamentaux.pdf",
+                    "download": true,
+                    "label": "Fondamentaux"
+                },
+                {
+                    "link": "assets/formations/angular/Angular - Fondamentaux (formation).pdf",
+                    "download": true,
+                    "label": "Fondamentaux (formation)"
+                },
+                {
+                    "link": "assets/formations/angular/Angular - Basics.pdf",
+                    "download": true,
+                    "label": "Quickstart"
+                },
+                {
+                    "link": "assets/formations/angular/Angular - et les stores avec NGRX.pdf",
+                    "download": true,
+                    "label": "Les stores avec NGRX"
+                },
+                {
+                    "link": "assets/formations/angular/Angular - Unit testing.pdf",
+                    "download": true,
+                    "label": "Unit testing"
+                },
+                {
+                    "link": "assets/formations/angular/Testing Angular.pdf",
+                    "download": true,
+                    "label": "Unit testing (illustré par des exemples)"
+                },
+                {
+                    "link": "assets/formations/angular/Angular - Universal.pdf",
+                    "download": true,
+                    "label": "Universal"
+                },
+                {
+                    "link": "assets/formations/angular/WebComponents.pdf",
+                    "download": true,
+                    "label": "Web Components"
+                },
+                {
+                    "link": "assets/formations/angular/Angular - GraphQL.pdf",
+                    "download": true,
+                    "label": "GraphQL"
+                },
+                {
+                    "link": "assets/formations/angular/NX.pdf",
+                    "download": true,
+                    "label": "NX (monorepo)"
+                }
+            ]
+        },
+        {
+            "title": ".NET",
+            "icon": "dot-net-plain",
+            "items": [
+                {
+                    "link": "assets/formations/dotnet/Core avec VSCode et Docker.pdf",
+                    "download": true,
+                    "label": "ASP.NET Core avec VisualStudio Code"
+                },
+                {
+                    "link": "https://www.youtube.com/watch?v=NPY7cbPz4uo",
+                    "label": "ASP.NET Core SignalR"
+                },
+                {
+                    "link": "assets/formations/dotnet/Kafka.pdf",
+                    "download": true,
+                    "label": "Kafka"
+                },
+                {
+                    "link": "assets/formations/dotnet/Angular vs Blazor.pdf",
+                    "download": true,
+                    "label": "Angular VS Blazor"
+                },
+                {
+                    "link": "assets/formations/dotnet/dotnet core - GraphQL.pdf",
+                    "download": true,
+                    "label": "GraphQL"
+                }
+            ]
+        }
+    ]
+}

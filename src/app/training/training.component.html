@@ -1,0 +1,24 @@
+<h2>Formations</h2>
+
+<nb-tabset > <!-- fullWidth -->
+    <nb-tab *ngFor="let category of training"
+        [tabIcon]="{ icon: category.icon, pack: 'devicon' }"
+        [tabTitle]="category.title"
+        [badgeText]="category.items.length"
+        badgeStatus="info"
+        responsive>
+        <nb-card>
+            <nb-card-header>
+            </nb-card-header>
+            <nb-list>
+                <nb-list-item *ngFor="let item of category.items">
+                    <nb-icon icon="chevron-right-outline" class="grey"></nb-icon>
+                    <a [href]="item.link" *ngIf="item.download" download>{{ item.label }}</a>
+                    <a [href]="item.link" *ngIf="!item.download" target="_blank" rel="noopener noreferrer" >{{ item.label }}</a>
+                </nb-list-item>
+            </nb-list>
+            <nb-card-footer>
+            </nb-card-footer>
+          </nb-card>
+    </nb-tab>
+</nb-tabset>

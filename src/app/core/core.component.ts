@@ -1,112 +1,55 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-import { NbMenuItem, NbSidebarService } from '@nebular/theme';
-import { filter } from 'rxjs/operators';
-
-import { mobile } from 'bowser';
+import { Component } from '@angular/core';
+import { NbMenuItem } from '@nebular/theme';
 
 @Component({
   selector: 'app-core',
   templateUrl: './core.component.html',
   styleUrls: ['./core.component.scss']
 })
-export class CoreComponent implements OnInit {
-
-  public isMobile = mobile;
+export class CoreComponent {
 
   public title = '{{Gilsdav}}';
 
   public items: NbMenuItem[] = [
     {
-      // title: 'About me',
       title: 'Qui suis-je ?',
       link: '/home',
-      icon: 'nb-person',
+      icon: 'person-outline',
       home: true
     },
-    // {
-    //   title: 'Portfolio',
-    //   icon: 'nb-gear',
-    //   children: [
-    //     {
-    //       title: 'Github',
-    //       url: 'https://github.com/gilsdav',
-    //     },
-    //     {
-    //       title: 'Privacy Policy',
-    //       url: '#',
-    //     },
-    //     {
-    //       title: 'Logout',
-    //       link: '',
-    //     },
-    //   ],
-    // },
     {
       title: 'Mes comptes',
-      icon: 'nb-email',
+      icon: 'email-outline',
       children: [
         {
           title: 'Github',
           url: 'https://github.com/gilsdav',
+          icon: 'github-outline',
         },
         {
           title: 'LinkedIn',
           url: 'https://www.linkedin.com/in/david-gilson-innovate/',
+          icon: 'linkedin-outline',
         },
+        {
+          title: 'Twitter',
+          url: 'https://twitter.com/GilsonDavid5',
+          icon: 'twitter-outline',
+        }
       ]
     },
     {
       title: 'Formations',
-      icon: 'nb-gear',
-      link: '/formations'
+      icon: 'settings-2-outline',
+      link: '/training'
     },
-    // {
-    //   title: 'Articles (FR)',
-    //   icon: 'nb-list',
-    //   children: [
-    //     {
-    //       title: 'Languages',
-    //       link: '/blog/languages',
-    //     },
-    //     {
-    //       title: 'Web Frameworks',
-    //       link: '/blog/frameworks',
-    //     },
-    //     {
-    //       title: 'Mobile',
-    //       link: '/blog/mobile',
-    //     },
-    //     {
-    //       title: 'Technologies',
-    //       link: '/blog/technologies',
-    //     },
-    //   ]
-    // },
     {
-      title: 'Wetry.tech',
-      icon: 'nb-cloudy',
-      url: 'https://wetry.tech',
+      title: 'Wetry.tech (blog)',
+      icon: 'radio-outline',
+      url: 'https://wetry.tech'
     }
   ];
 
-  constructor(private router: Router, private sidebarService: NbSidebarService) { }
-
-  ngOnInit() {
-    if (this.isMobile) {
-      this.router.events
-        .pipe(filter(event => event instanceof NavigationEnd))
-          .subscribe(() => this.mobileToggle());
-    }
-  }
-
-  public toggle(): boolean {
-    this.sidebarService.toggle();
-    return false;
-  }
-
-  private mobileToggle(): void {
-    this.sidebarService.collapse();
-  }
+  constructor() { }
 
 }
