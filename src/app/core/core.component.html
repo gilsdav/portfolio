@@ -1,14 +1,21 @@
 <nb-layout>
+
   <nb-layout-header fixed>
-    <a class="toggle" href="#" (click)="toggle()"><i class="nb-menu"></i></a>
-    <a [routerLink]="'/home'" class="logo">{{title}}</a> 
+    <app-header [title]="title"></app-header>
   </nb-layout-header>
 
-  <nb-sidebar [responsive]="true"> <!-- [fixed]="isMobile" -->
+  <!-- <nb-sidebar>
+    Sidebar Content
+  </nb-sidebar> -->
+  <nb-sidebar [responsive]="true">
     <nb-menu [items]="items"></nb-menu>
   </nb-sidebar>
 
   <nb-layout-column>
     <ng-content></ng-content>
   </nb-layout-column>
+
+  <!-- <nb-layout-footer fixed>
+  </nb-layout-footer> -->
+
 </nb-layout>

@@ -1,0 +1,19 @@
+<div class="header-container">
+  <div class="logo-container">
+    <a (click)="toggle()" href="#" class="sidebar-toggle">
+      <nb-icon icon="menu-2-outline"></nb-icon>
+    </a>
+    <a class="logo" [routerLink]="['/']" >{{title}}</a>
+  </div>
+</div>
+<div class="header-container user-data">
+  <nb-actions size="small">
+    <nb-action>
+      <nb-user size="large"
+        name="David Gilson"
+        title="Dreamer"
+        picture="https://avatars0.githubusercontent.com/u/21348530?s=200">
+        </nb-user>
+    </nb-action>
+  </nb-actions>
+</div>

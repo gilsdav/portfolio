@@ -1,23 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-
-import { NbThemeModule } from '@nebular/theme';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NbThemeModule, NbLayoutModule, NbIconModule, NbSidebarModule, NbMenuModule, NbUserModule, NbActionsModule } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { CoreComponent } from './core/core.component';
+import { HeaderComponent } from './core/components/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    AppComponent,
+    CoreComponent,
+    HeaderComponent
+   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     AppRoutingModule,
-    NbThemeModule.forRoot({ name: 'default' }),
-    CoreModule
+    BrowserAnimationsModule,
+    NbThemeModule.forRoot({ name: 'dark' }),
+    NbLayoutModule,
+    NbEvaIconsModule,
+    NbIconModule,
+    NbSidebarModule.forRoot(),
+    NbMenuModule.forRoot(),
+    NbUserModule,
+    NbActionsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

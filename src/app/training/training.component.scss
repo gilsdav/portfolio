@@ -1,0 +1,27 @@
+@import '../../themes';
+
+nb-card-header, nb-card-footer {
+    padding: 0.2rem;
+}
+
+:host ::ng-deep nb-tabset nb-icon {
+    font-size: 2.2rem;
+    line-height: unset;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+nb-list-item a {
+    text-decoration: none;
+    color: #c9d7ec;
+    &:hover {
+        text-decoration: underline;
+        color: #6fa2f1;
+    }
+}
+
+.grey {
+    color: nb-theme(color-primary-300);
+}
